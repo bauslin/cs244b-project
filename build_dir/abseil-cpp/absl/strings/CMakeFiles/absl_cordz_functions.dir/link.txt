@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libabsl_cordz_functions.a CMakeFiles/absl_cordz_functions.dir/internal/cordz_functions.cc.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib libabsl_cordz_functions.a
