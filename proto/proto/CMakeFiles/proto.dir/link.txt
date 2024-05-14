@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libproto.a CMakeFiles/proto.dir/streamlet.grpc.pb.cc.o CMakeFiles/proto.dir/streamlet.pb.cc.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libproto.a
