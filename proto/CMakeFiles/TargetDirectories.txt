@@ -1,6 +1,0 @@
-/Users/sherylhsu/school/cs244b/cs244b-project/proto/CMakeFiles/StreamletNodeV2.dir
-/Users/sherylhsu/school/cs244b/cs244b-project/proto/CMakeFiles/edit_cache.dir
-/Users/sherylhsu/school/cs244b/cs244b-project/proto/CMakeFiles/rebuild_cache.dir
-/Users/sherylhsu/school/cs244b/cs244b-project/proto/proto/CMakeFiles/proto.dir
-/Users/sherylhsu/school/cs244b/cs244b-project/proto/proto/CMakeFiles/edit_cache.dir
-/Users/sherylhsu/school/cs244b/cs244b-project/proto/proto/CMakeFiles/rebuild_cache.dir
