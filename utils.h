@@ -32,4 +32,4 @@ void write_hexstring(std::string &str, const uint8_t *bytes, size_t len);
  * in the same order as they appear in the file. id is the node id for
  * which the private key should be extracted into priv.
  */
-int load_config(const char *file, uint32_t id, std::vector<Peer> &peers, Key &priv);
+int load_config(const std::string &file, uint32_t id, std::vector<Peer> &peers, Key &priv);
