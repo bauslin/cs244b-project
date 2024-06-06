@@ -893,12 +893,14 @@ int main(const int argc, const char *argv[]) {
     }
 
     gpr_time_init();
-
-    ThroughputLossStateMachine rsm{
-        id,
-        static_cast<uint32_t>(peers.size()),
-        gpr_time_from_millis(1000, GPR_TIMESPAN)
-    };
+    KeyValueStateMachine rsm(
+        id
+    );
+    // ThroughputLossStateMachine rsm{
+    //     id,
+    //     static_cast<uint32_t>(peers.size()),
+    //     gpr_time_from_millis(1000, GPR_TIMESPAN)
+    // };
 
     StreamletNodeGST service{
         id,
@@ -922,7 +924,7 @@ int main(const int argc, const char *argv[]) {
 
     std::cout << "Running as node " << id << " at " << peers[id].addr << std::endl;
 
-    std::thread input_thread = rsm->SpawnThread();
+    std::thread input_thread = rsm.SpawnThread();
     service.Run(sync_start);
 
     input_thread.join();
