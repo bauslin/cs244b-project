@@ -367,6 +367,10 @@ grpc::Status StreamletNodeStrict::ProposeBlock(
             //     << proposal->block().parent() << ", discarding message" << std::endl;
 
             return grpc::Status::OK; // discard
+    } else if (iter->second->hash != proposal->block().phash()) {
+        std::cout << "Warning: Proposal for epoch " << b_epoch
+            << " has incorrect parent hash, discarding message" << std::endl;
+        return grpc::Status::OK; // discard message
     } else {
         successors_m.unlock();
     }
