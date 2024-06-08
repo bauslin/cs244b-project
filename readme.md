@@ -56,6 +56,9 @@ as its pieces arrive. To ease implementation effort, the method is copied in the
 only one block may be voted on at a time, and any block that has not been notarized can be forgotten. In any case, both to unit test and demonstrate the
 algorithm, `notarization_test.cpp` contains a standalone implementation of the procedure with associated methods to simulate the notarization of new blocks.
 
+## Experiment Data
+Spreadsheet workbooks containing the run logs and data used in our evaluation are available in XLSX and ODS formats in the two files named `Streamlet Timing Experiment`.
+
 ## References
 ```
 Benjamin Y. Chan and Elaine Shi. 2020. Streamlet: Textbook Streamlined Blockchains. In Proceedings of the 2nd ACM Conference on Advances in Financial Technologies (AFT '20). Association for Computing Machinery, New York, NY, USA, 1–11. https://doi.org/10.1145/3419614.3423256
